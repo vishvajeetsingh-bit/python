@@ -1,6 +1,6 @@
 import speech_recognition as sr
-
-AUDIO_FILE = "24.wav"
+#source file should be in the same directory where .py file stored.
+AUDIO_FILE = "source file"#source file in .wav format
 r = sr.Recognizer()
 with sr.AudioFile(AUDIO_FILE) as source:
     audio = r.record(source)
